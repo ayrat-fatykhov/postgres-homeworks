@@ -11,9 +11,7 @@ order_path = "../homework-1/north_data/orders_data.csv"
 def instantiate_from_csv(csv_path):
     with open(csv_path, encoding="utf-8") as file:
         data = csv.DictReader(file)
-        # print(data)
         items = list(data)
-        # print(items)
         return items
 
 
